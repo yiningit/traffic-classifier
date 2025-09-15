@@ -1,5 +1,6 @@
-# Traffic
+# Traffic Sign Classifier
 Task: Use Tensorflow to build a neural network to classify road signs based on an image of those signs.
+Developed and tested on the German Traffic Sign Recognition Benchmark (GTSRB) dataset. Created for CS50AI 2024.
 
 ## Experimentation Process
 I began with a basic model with one convolutional, pooling and hidden layer:
@@ -31,5 +32,6 @@ Aiming for an **evaluation accuracy of over 99%** with **minimal loss and overfi
 - a flatten layer
 - 1 hidden layer with 256 nodes and ReLU activation, with 50% dropout
 - an output layer with NUM_CATEGORIES nodes and softmax activation
+
 
 #### My final model takes around 7s per epoch to train. Over 6 runs, it had an average evaluation accuracy of **99.25%**, average training accuracy of 99.28% and an average loss of 0.0030.
